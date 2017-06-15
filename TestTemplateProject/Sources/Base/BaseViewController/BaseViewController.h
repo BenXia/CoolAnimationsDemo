@@ -1,5 +1,5 @@
 //
-//  HomePageVC.h
+//  BaseViewController.h
 //  TestTemplateProject
 //
 //  Created by Ben on 2017/5/22.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomePageVC : BaseViewController
+#pragma mark -
+
+@interface BaseViewController : UIViewController
 
 @end
+
+

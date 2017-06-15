@@ -1,13 +1,13 @@
 //
-//  PulsingCirclesVC.h
+//  BoomVC.h
 //  TestTemplateProject
 //
-//  Created by Ben on 2017/6/14.
+//  Created by Ben on 2017/6/15.
 //  Copyright © 2017年 iOSStudio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface PulsingCirclesVC : BaseViewController
+@interface BoomVC : BaseViewController
 
 @end

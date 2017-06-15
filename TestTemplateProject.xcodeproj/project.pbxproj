@@ -19,8 +19,6 @@
 		B50394D91EEE71E00016FA97 /* HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50394D71EEE71E00016FA97 /* HomePageVC.xib */; };
 		B50394DE1EEE71FB0016FA97 /* PlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B50394DC1EEE71FB0016FA97 /* PlaygroundVC.m */; };
 		B50394DF1EEE71FB0016FA97 /* PlaygroundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50394DD1EEE71FB0016FA97 /* PlaygroundVC.xib */; };
-		B51B05A21EF0F2E50033222B /* BNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51B059E1EF0F2E50033222B /* BNNavigationController.m */; };
-		B51B05A31EF0F2E50033222B /* BNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51B05A11EF0F2E50033222B /* BNTabBarController.m */; };
 		B575A4481EF11C3800430175 /* QQPulsingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A4471EF11C3800430175 /* QQPulsingLayer.m */; };
 		B575A44C1EF11C7100430175 /* PulsingCirclesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A44A1EF11C7100430175 /* PulsingCirclesVC.m */; };
 		B575A44D1EF11C7100430175 /* PulsingCirclesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B575A44B1EF11C7100430175 /* PulsingCirclesVC.xib */; };
@@ -31,6 +29,12 @@
 		B575A4671EF1720300430175 /* RewardSuccessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A4621EF1720300430175 /* RewardSuccessWindow.m */; };
 		B575A4691EF1720300430175 /* RewardSuccessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A4651EF1720300430175 /* RewardSuccessVC.m */; };
 		B575A46B1EF1724700430175 /* RewardSuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B575A46A1EF1724700430175 /* RewardSuccessVC.xib */; };
+		B575A4701EF229C700430175 /* BoomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A46E1EF229C700430175 /* BoomVC.m */; };
+		B575A4711EF229C700430175 /* BoomVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B575A46F1EF229C700430175 /* BoomVC.xib */; };
+		B575A4791EF232AF00430175 /* UIView+BNBoom.m in Sources */ = {isa = PBXBuildFile; fileRef = B575A4781EF232AF00430175 /* UIView+BNBoom.m */; };
+		B5FA689D1EF26D270077349C /* BNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FA68991EF26D270077349C /* BNNavigationController.m */; };
+		B5FA689E1EF26D270077349C /* BNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FA689C1EF26D270077349C /* BNTabBarController.m */; };
+		B5FA68A21EF26D7A0077349C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FA68A11EF26D7A0077349C /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,10 +66,6 @@
 		B50394DB1EEE71FB0016FA97 /* PlaygroundVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaygroundVC.h; sourceTree = "<group>"; };
 		B50394DC1EEE71FB0016FA97 /* PlaygroundVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaygroundVC.m; sourceTree = "<group>"; };
 		B50394DD1EEE71FB0016FA97 /* PlaygroundVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaygroundVC.xib; sourceTree = "<group>"; };
-		B51B059D1EF0F2E50033222B /* BNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNNavigationController.h; sourceTree = "<group>"; };
-		B51B059E1EF0F2E50033222B /* BNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNNavigationController.m; sourceTree = "<group>"; };
-		B51B05A01EF0F2E50033222B /* BNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNTabBarController.h; sourceTree = "<group>"; };
-		B51B05A11EF0F2E50033222B /* BNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNTabBarController.m; sourceTree = "<group>"; };
 		B575A4461EF11C3800430175 /* QQPulsingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQPulsingLayer.h; sourceTree = "<group>"; };
 		B575A4471EF11C3800430175 /* QQPulsingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQPulsingLayer.m; sourceTree = "<group>"; };
 		B575A4491EF11C7100430175 /* PulsingCirclesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingCirclesVC.h; sourceTree = "<group>"; };
@@ -84,6 +84,17 @@
 		B575A4641EF1720300430175 /* RewardSuccessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardSuccessVC.h; sourceTree = "<group>"; };
 		B575A4651EF1720300430175 /* RewardSuccessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardSuccessVC.m; sourceTree = "<group>"; };
 		B575A46A1EF1724700430175 /* RewardSuccessVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardSuccessVC.xib; sourceTree = "<group>"; };
+		B575A46D1EF229C700430175 /* BoomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomVC.h; sourceTree = "<group>"; };
+		B575A46E1EF229C700430175 /* BoomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoomVC.m; sourceTree = "<group>"; };
+		B575A46F1EF229C700430175 /* BoomVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoomVC.xib; sourceTree = "<group>"; };
+		B575A4771EF232AF00430175 /* UIView+BNBoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BNBoom.h"; sourceTree = "<group>"; };
+		B575A4781EF232AF00430175 /* UIView+BNBoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BNBoom.m"; sourceTree = "<group>"; };
+		B5FA68981EF26D270077349C /* BNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNNavigationController.h; sourceTree = "<group>"; };
+		B5FA68991EF26D270077349C /* BNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNNavigationController.m; sourceTree = "<group>"; };
+		B5FA689B1EF26D270077349C /* BNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNTabBarController.h; sourceTree = "<group>"; };
+		B5FA689C1EF26D270077349C /* BNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNTabBarController.m; sourceTree = "<group>"; };
+		B5FA68A01EF26D7A0077349C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B5FA68A11EF26D7A0077349C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +152,7 @@
 				330F7BE01ED333F00009280A /* Global */,
 				33144ED41EF05059006D27AC /* Utilities */,
 				330F7BDB1ED333F00009280A /* Category */,
+				B5FA68961EF26D270077349C /* Base */,
 				330F7BE11ED333F00009280A /* Network */,
 				330F7BE31ED333F00009280A /* View */,
 				330F7BEE1ED333F00009280A /* ViewController */,
@@ -200,11 +212,10 @@
 				B50394D51EEE71E00016FA97 /* HomePageVC.h */,
 				B50394D61EEE71E00016FA97 /* HomePageVC.m */,
 				B50394D71EEE71E00016FA97 /* HomePageVC.xib */,
-				B51B059C1EF0F2E50033222B /* BNNavigationController */,
-				B51B059F1EF0F2E50033222B /* BNTabBarController */,
 				B575A4451EF11C3800430175 /* PulsingCirclesAnimation */,
 				B575A4521EF1711A00430175 /* ImageEmitterVC */,
 				B575A45D1EF1720300430175 /* RewardSuccessVC */,
+				B575A46C1EF229AD00430175 /* BoomVC */,
 				B50394DA1EEE71FB0016FA97 /* Playground */,
 			);
 			path = ViewController;
@@ -255,24 +266,6 @@
 				B50394DD1EEE71FB0016FA97 /* PlaygroundVC.xib */,
 			);
 			path = Playground;
-			sourceTree = "<group>";
-		};
-		B51B059C1EF0F2E50033222B /* BNNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				B51B059D1EF0F2E50033222B /* BNNavigationController.h */,
-				B51B059E1EF0F2E50033222B /* BNNavigationController.m */,
-			);
-			path = BNNavigationController;
-			sourceTree = "<group>";
-		};
-		B51B059F1EF0F2E50033222B /* BNTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				B51B05A01EF0F2E50033222B /* BNTabBarController.h */,
-				B51B05A11EF0F2E50033222B /* BNTabBarController.m */,
-			);
-			path = BNTabBarController;
 			sourceTree = "<group>";
 		};
 		B575A4451EF11C3800430175 /* PulsingCirclesAnimation */ = {
@@ -328,6 +321,63 @@
 				B575A4621EF1720300430175 /* RewardSuccessWindow.m */,
 			);
 			path = RewardSuccess;
+			sourceTree = "<group>";
+		};
+		B575A46C1EF229AD00430175 /* BoomVC */ = {
+			isa = PBXGroup;
+			children = (
+				B575A4761EF232A000430175 /* UIVIew+BNBoom */,
+				B575A46D1EF229C700430175 /* BoomVC.h */,
+				B575A46E1EF229C700430175 /* BoomVC.m */,
+				B575A46F1EF229C700430175 /* BoomVC.xib */,
+			);
+			path = BoomVC;
+			sourceTree = "<group>";
+		};
+		B575A4761EF232A000430175 /* UIVIew+BNBoom */ = {
+			isa = PBXGroup;
+			children = (
+				B575A4771EF232AF00430175 /* UIView+BNBoom.h */,
+				B575A4781EF232AF00430175 /* UIView+BNBoom.m */,
+			);
+			path = "UIVIew+BNBoom";
+			sourceTree = "<group>";
+		};
+		B5FA68961EF26D270077349C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA689F1EF26D5C0077349C /* BaseViewController */,
+				B5FA68971EF26D270077349C /* BNNavigationController */,
+				B5FA689A1EF26D270077349C /* BNTabBarController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5FA68971EF26D270077349C /* BNNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA68981EF26D270077349C /* BNNavigationController.h */,
+				B5FA68991EF26D270077349C /* BNNavigationController.m */,
+			);
+			path = BNNavigationController;
+			sourceTree = "<group>";
+		};
+		B5FA689A1EF26D270077349C /* BNTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA689B1EF26D270077349C /* BNTabBarController.h */,
+				B5FA689C1EF26D270077349C /* BNTabBarController.m */,
+			);
+			path = BNTabBarController;
+			sourceTree = "<group>";
+		};
+		B5FA689F1EF26D5C0077349C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA68A01EF26D7A0077349C /* BaseViewController.h */,
+				B5FA68A11EF26D7A0077349C /* BaseViewController.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		BDE61C448897B6B2235B7026 /* Frameworks */ = {
@@ -404,6 +454,7 @@
 				B50394DF1EEE71FB0016FA97 /* PlaygroundVC.xib in Resources */,
 				330F7C021ED334380009280A /* Assets.xcassets in Resources */,
 				B575A46B1EF1724700430175 /* RewardSuccessVC.xib in Resources */,
+				B575A4711EF229C700430175 /* BoomVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +514,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B575A45C1EF1711A00430175 /* AZParticle.m in Sources */,
+				B575A4701EF229C700430175 /* BoomVC.m in Sources */,
 				33144EF91EF05218006D27AC /* NSString+Size.m in Sources */,
+				B5FA689D1EF26D270077349C /* BNNavigationController.m in Sources */,
 				33144EF61EF05059006D27AC /* UIUtils.m in Sources */,
 				B50394D81EEE71E00016FA97 /* HomePageVC.m in Sources */,
 				B575A4671EF1720300430175 /* RewardSuccessWindow.m in Sources */,
+				B5FA689E1EF26D270077349C /* BNTabBarController.m in Sources */,
 				B50394DE1EEE71FB0016FA97 /* PlaygroundVC.m in Sources */,
 				B575A45A1EF1711A00430175 /* ImageEmitterVC.m in Sources */,
 				B575A4481EF11C3800430175 /* QQPulsingLayer.m in Sources */,
@@ -475,11 +529,11 @@
 				330F7BF61ED333F00009280A /* AppDelegate.m in Sources */,
 				B575A4691EF1720300430175 /* RewardSuccessVC.m in Sources */,
 				330F7C0D1ED349AB0009280A /* UIView+Helper.m in Sources */,
-				B51B05A21EF0F2E50033222B /* BNNavigationController.m in Sources */,
+				B575A4791EF232AF00430175 /* UIView+BNBoom.m in Sources */,
 				330F7C001ED333F00009280A /* main.m in Sources */,
 				B575A45B1EF1711A00430175 /* AZEmitterLayer.m in Sources */,
+				B5FA68A21EF26D7A0077349C /* BaseViewController.m in Sources */,
 				337EEC291EDC3F2C00EDC166 /* NSObject+DLIntrospection.m in Sources */,
-				B51B05A31EF0F2E50033222B /* BNTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

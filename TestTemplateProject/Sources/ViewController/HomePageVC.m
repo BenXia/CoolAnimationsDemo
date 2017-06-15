@@ -10,6 +10,7 @@
 #import "PulsingCirclesVC.h"
 #import "ImageEmitterVC.h"
 #import "RewardSuccessVC.h"
+#import "BoomVC.h"
 #import "PlaygroundVC.h"
 
 static const CGFloat kTableViewCellHeight = 60.0f;
@@ -90,7 +91,12 @@ static const CGFloat kTableViewCellHeight = 60.0f;
                                                           vcClass:[RewardSuccessVC class]
                                                      navigationVC:self.navigationController];
     
-    self.dataSourceArray = [NSArray arrayWithObjects:model1, model2, model3, nil];
+    HomePageCellModel *model4 = [HomePageCellModel modelWithTitle:@"爆炸效果"
+                                                         subTitle:@"一个 UIView 的扩展实现视图爆炸"
+                                                          vcClass:[BoomVC class]
+                                                     navigationVC:self.navigationController];
+    
+    self.dataSourceArray = [NSArray arrayWithObjects:model1, model2, model3, model4, nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

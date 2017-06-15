@@ -26,10 +26,6 @@ static const CGFloat kButtonHeight = 48;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-    
     self.middelButton.layer.cornerRadius = kButtonHeight/2;
     self.middelButton.layer.masksToBounds = YES;
 }
