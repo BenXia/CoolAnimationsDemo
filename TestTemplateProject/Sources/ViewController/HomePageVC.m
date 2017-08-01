@@ -11,6 +11,9 @@
 #import "ImageEmitterVC.h"
 #import "RewardSuccessVC.h"
 #import "BoomVC.h"
+#import "SliderVC.h"
+#import "ScrollViewGalleryVC.h"
+#import "CollectionViewGalleryVC.h"
 #import "PlaygroundVC.h"
 
 static const CGFloat kTableViewCellHeight = 60.0f;
@@ -96,7 +99,22 @@ static const CGFloat kTableViewCellHeight = 60.0f;
                                                           vcClass:[BoomVC class]
                                                      navigationVC:self.navigationController];
     
-    self.dataSourceArray = [NSArray arrayWithObjects:model1, model2, model3, model4, nil];
+    HomePageCellModel *model5 = [HomePageCellModel modelWithTitle:@"幻灯片"
+                                                         subTitle:@"支持各种动画效果"
+                                                          vcClass:[SliderVC class]
+                                                     navigationVC:self.navigationController];
+    
+    HomePageCellModel *model6 = [HomePageCellModel modelWithTitle:@"滑动卡片"
+                                                         subTitle:@"基于 UIScrollView 的实现"
+                                                          vcClass:[ScrollViewGalleryVC class]
+                                                     navigationVC:self.navigationController];
+    
+    HomePageCellModel *model7 = [HomePageCellModel modelWithTitle:@"滑动卡片"
+                                                         subTitle:@"基于 UICollectionView 的实现"
+                                                          vcClass:[CollectionViewGalleryVC class]
+                                                     navigationVC:self.navigationController];
+    
+    self.dataSourceArray = [NSArray arrayWithObjects:model1, model2, model3, model4, model5, model6, model7, nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -9,6 +9,112 @@
 #ifndef BN_macrodef_h
 #define BN_macrodef_h
 
+
+// 单件.h中声明
+#undef BN_DEC_SINGLETON
+#define BN_DEC_SINGLETON(classname) \
++ (instancetype)sharedInstance;\
++ (instancetype)shared##classname;
+
+
+// 单件.m中实现
+#undef BN_IMP_SINGLETON
+#if __has_feature(objc_arc)
+#define BN_IMP_SINGLETON(classname) \
+\
+static classname *shared##classname = nil;\
+\
++ (instancetype)sharedInstance {\
+\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+shared##classname = [[self alloc] init];\
+});\
+return shared##classname;\
+} \
+\
++ (instancetype)shared##classname {\
+\
+return [self sharedInstance];\
+}\
+\
++ (instancetype)allocWithZone:(struct _NSZone *)zone {\
+\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+shared##classname = [super allocWithZone:zone];\
+});\
+return shared##classname;\
+}\
+\
+- (id)copyWithZone:(NSZone *)zone {\
+return self;\
+}\
+\
+- (id)mutableCopyWithZone:(NSZone *)zone\
+{\
+return self;\
+}
+
+#else
+#define BN_IMP_SINGLETON(classname) \
+\
+static classname *shared##classname = nil;\
+\
++ (instancetype)sharedInstance {\
+\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+shared##classname = [[self alloc] init];\
+});\
+return shared##classname;\
+} \
+\
++ (instancetype)shared##classname {\
+\
+return [self sharedInstance];\
+}\
+\
++ (instancetype)allocWithZone:(struct _NSZone *)zone {\
+\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+shared##classname = [super allocWithZone:zone];\
+});\
+return shared##classname;\
+}\
+\
+- (id)copyWithZone:(NSZone *)zone {\
+return self;\
+}\
+\
+- (id)mutableCopyWithZone:(NSZone *)zone {\
+return self;\
+}\
+\
+- (oneway void)release {\
+}\
+\
+- (instancetype)retain {\
+return self;\
+}\
+\
+- (NSUInteger)retainCount {\
+return MAXFLOAT;\
+}
+
+#endif
+
+
+#ifndef NS_ENUM
+#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
+#endif
+
+#define RUNLOOP_RUN_FOR_A_WHILE \
+{ \
+[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]]; \
+}
+
 // 检查系统版本
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)

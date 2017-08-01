@@ -20,6 +20,7 @@
 #import "macrodef.h"
 #import "Utility.h"
 #import "UIView+Helper.h"
+#import "UIView+Hierarchy.h"
 #import "NSString+Size.h"
 #import "BaseViewController.h"
 #import "BNNavigationController.h"
